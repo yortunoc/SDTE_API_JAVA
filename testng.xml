@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/yury.ortuno/Documents/works/API_AutomationWithJavaAndRestAssured/automation">
+        <classes>
+            <class name="com.unosquare.FirstTest">
+                <methods>
+                    <include name="f_Gherkin"/>
+                    <include name="f_Gherkin1"/>
+                    <include name="postRequest"/>
+                </methods>
+            </class>
+            <class name="com.unosquare.LoginTest">
+                <methods>
+                    <include name="PostLogin"/>
+                    <include name="GetUSerById"/>
+                </methods>
+            </class>
+            <class name="com.unosquare.PostUsingJsonFiles">
+                <methods>
+                    <include name="create_post_using_json_files"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
